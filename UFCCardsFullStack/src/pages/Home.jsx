@@ -68,45 +68,42 @@ const Home = ({
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       {/* Hero Section */}
-      <div
-  className="relative bg-[url('images//ufcbackground.webp')] bg-cover bg-center bg-no-repeat overflow-hidden"
->
-  {/* dark overlay to keep text readable */}
-  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/70 to-slate-900/90"></div>
+      <div className="relative bg-[url('/images/ufcbackground.webp')] bg-cover bg-center bg-no-repeat overflow-hidden">
+        {/* dark overlay to keep text readable */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/70 to-slate-900/90"></div>
 
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
-    <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-white">
-      Welcome my analysis on UFC
-      <br />
-      Fighter Collection
-    </h1>
-    <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
-      Step into the world of UFC like never before. Here, every fighter is
-      represented through a detailed stat card that goes beyond wins and
-      losses. Explore average performance metrics matched against their
-      division rivals, uncovering how each fighter stacks up in striking,
-      grappling, and endurance.
-    </p>
-    <p className="text-red-400 text-lg sm:text-xl font-semibold mb-8">
-      Discover the data behind your favorite fighter
-    </p>
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-slate-300">
-      <div className="flex items-center">
-        <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-        Combat Records & Statistics
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
+          <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-white">
+            Welcome my analysis on UFC
+            <br />
+            Fighter Collection
+          </h1>
+          <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Step into the world of UFC like never before. Here, every fighter is
+            represented through a detailed stat card that goes beyond wins and
+            losses. Explore average performance metrics matched against their
+            division rivals, uncovering how each fighter stacks up in striking,
+            grappling, and endurance.
+          </p>
+          <p className="text-red-400 text-lg sm:text-xl font-semibold mb-8">
+            Discover the data behind your favorite fighter
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-slate-300">
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+              Combat Records & Statistics
+            </div>
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+              Performance Analytics
+            </div>
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+              Career Highlights
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center">
-        <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-        Performance Analytics
-      </div>
-      <div className="flex items-center">
-        <div className="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-        Career Highlights
-      </div>
-    </div>
-  </div>
-</div>
-
 
       {/* Header */}
       <div className="bg-slate-800 border-b border-slate-700">
