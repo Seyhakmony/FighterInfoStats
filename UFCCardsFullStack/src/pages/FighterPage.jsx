@@ -166,7 +166,7 @@ const FighterPage = ({ allFighters }) => {
                   </div>
                   <div className="text-white font-semibold">
                     #{fighter.rank}
-                    {console.log(fighter.rank)}
+                    {/* {console.log(fighter.rank)} */}
                   </div>
                 </div>
                 <div>

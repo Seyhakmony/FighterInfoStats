@@ -39,7 +39,6 @@ export const loadFighterData = async () => {
         skipEmptyLines: true,
         delimitersToGuess: [",", "\t", "|", ";"],
         complete: (results) => {
-          console.log(results);
           if (results.errors.length > 0) {
             console.warn("CSV parsing errors:", results.errors);
           }

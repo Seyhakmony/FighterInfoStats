@@ -69,7 +69,7 @@ const Home = ({
     <div className="min-h-screen bg-slate-900 text-white">
       {/* Hero Section */}
       <div className="relative bg-[url('/images/ufcbackground.webp')] bg-cover bg-center bg-no-repeat overflow-hidden">
-        {/* dark overlay to keep text readable */}
+       
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/70 to-slate-900/90"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
