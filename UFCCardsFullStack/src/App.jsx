@@ -36,16 +36,16 @@ const App = () => {
     loadData();
   }, []);
 
-  // Filter fighters based on search and weight class
+  
   useEffect(() => {
     let filtered = allFighters;
     
-    console.log('Filtering fighters:', {
-      searchTerm,
-      selectedWeightClass,
-      allFightersCount: allFighters.length,
-      sampleFighter: allFighters[0]
-    });
+    // console.log('Filtering fighters:', {
+    //   searchTerm,
+    //   selectedWeightClass,
+    //   allFightersCount: allFighters.length,
+    //   sampleFighter: allFighters[0]
+    // });
     
     if (searchTerm) {
       filtered = filtered.filter(fighter => {
@@ -55,29 +55,18 @@ const App = () => {
         
         return name.includes(searchLower) || nickname.includes(searchLower);
       });
-      console.log('After search filter:', filtered.length);
+      // console.log('After search filter:', filtered.length);
     }
     
     if (selectedWeightClass !== 'Pound for Pound') {
       filtered = filtered.filter(fighter => fighter?.weight_class === selectedWeightClass);
-      console.log('Divisions:', filtered.length);
+      // console.log('Divisions:', filtered.length);
     }
     
-    console.log('Final filtered count:', filtered.length);
+    // console.log('Final filtered count:', filtered.length);
     setFilteredFighters(filtered);
   }, [searchTerm, selectedWeightClass, allFighters]);
 
-  const handleFighterClick = (fighter) => {
-    setSelectedFighter(fighter);
-    setCurrentPage('fighter');
-  };
-
-  const handleBackToHome = () => {
-    setCurrentPage('home');
-    setSelectedFighter(null);
-  };
-
-  // Show loading state
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center">
@@ -90,7 +79,6 @@ const App = () => {
     );
   }
 
-  // Show error state
   if (error) {
     return (
       <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center">
