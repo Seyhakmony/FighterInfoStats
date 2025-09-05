@@ -96,13 +96,13 @@ const FighterCard = ({ fighter, onClick, showChart = false, selectedWeightClass 
 
       {/* Hover Chart Overlay */}
       {isHovered && (
-        <div className="absolute inset-0 bg-slate-900 bg-opacity-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
-          <div className="w-full h-full p-4">
+        <div className="absolute inset-0 w-full h-full bg-slate-900 bg-opacity-95 flex items-center justify-center transition-all duration-300 cursor-pointer">
+          <div className="w-full h-full p-2">
             <h4 className="text-white text-center mb-2 font-semibold">
               {fighter.name} Stats
             </h4>
-            <ResponsiveContainer width="100%" height="80%">
-              <RadarChart data={overallChartData}>
+            <ResponsiveContainer width="100%" height="70%">
+              <RadarChart data={overallChartData} margin={{right: 37, left: 37}}>
                 <PolarGrid stroke="#374151" />
                 <PolarAngleAxis
                   dataKey="category"

@@ -74,16 +74,14 @@ const Home = ({
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
           <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-white">
-            Welcome my analysis on UFC
-            <br />
-            Fighter Collection
+            Welcome to my analysis of UFC fighters
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             Step into the world of UFC like never before. Here, every fighter is
             represented through a detailed stat card that goes beyond wins and
             losses. Explore average performance metrics matched against their
-            division rivals, uncovering how each fighter stacks up in striking,
-            grappling, and endurance.
+            division rivals, uncovering how each fighter stacks up in striking, wrestling, and 
+            grappling.
           </p>
           <p className="text-red-400 text-lg sm:text-xl font-semibold mb-8">
             Discover the data behind your favorite fighter
@@ -102,6 +100,7 @@ const Home = ({
               Career Highlights
             </div>
           </div>
+          <p className="text-large sm:text-large text-slate-300 mt-8 max-w-4xl mx-auto leading-relaxed italic ">Note: Fighter profiles are generated from aggregated statistical averages from their primary weight divisions. As such, these analytical ratings may differ from subjective opinions.</p>
         </div>
       </div>
 

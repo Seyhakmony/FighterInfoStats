@@ -88,7 +88,7 @@ const FighterPage = ({ allFighters }) => {
             <img
               src={fighter.image}
               alt={fighter.name}
-              className="w-48 h-80 sm:w-56 sm:h-96 lg:w-60 lg:h-[28rem] object-cover object-top rounded-lg mb-4 mx-auto bg-gray-600"
+              className="w-48 h-80 sm:w-56 sm:h-96 lg:w-60 lg:h-[28rem] object-cover object-top rounded-lg mb-4 mx-auto bg-gray-700"
 
             />
             {/* Fighter Info */}
@@ -144,7 +144,7 @@ const FighterPage = ({ allFighters }) => {
                 </div>
                 <div>
                   <div className="text-slate-400 text-sm">
-                    Career Pound for Pound Rank:
+                    Highest Career Pound for Pound Rank:
                   </div>
                   <div className="text-white font-semibold">
                     #{fighter.pfp_rank_career}
@@ -152,7 +152,7 @@ const FighterPage = ({ allFighters }) => {
                 </div>
                 <div>
                   <div className="text-slate-400 text-sm">
-                    Career Divsion Rank:
+                    Highest Career Divsion Rank:
                   </div>
                   <div className="text-white font-semibold">
                     {Number(fighter.div_rank_career) === 0
